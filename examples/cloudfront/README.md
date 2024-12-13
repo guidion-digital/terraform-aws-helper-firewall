@@ -1,0 +1,1 @@
+Cloudfront usage requires you do _not_ set `var.resource_arn`, but rather attach the created Web ACL in your application module to the output `web_acl_id`. You will also need to ensure you create and use an AWS provider in US East 1, as in the example.
