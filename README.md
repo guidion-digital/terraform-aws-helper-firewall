@@ -19,4 +19,4 @@ You can optionally enable WAF logging to CloudWatch Logs by setting:
 
 When enabled, this module creates a CloudWatch log group named:
 
-`/aws/waf/$application_name`
+`aws-waf-logs-$application_name`

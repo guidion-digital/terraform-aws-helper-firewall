@@ -23,7 +23,7 @@ resource "aws_wafv2_ip_set" "whitelist" {
 resource "aws_cloudwatch_log_group" "waf" {
   count = var.firewall_configuration != null && var.enable_logging ? 1 : 0
 
-  name = "/aws/waf/${var.application_name}"
+  name = "aws-waf-logs-${var.application_name}"
   tags = var.tags
 }
 
