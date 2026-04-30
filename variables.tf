@@ -254,3 +254,15 @@ variable "tags" {
 
   default = {}
 }
+
+variable "enable_logging" {
+  description = "Enable WAF logging to CloudWatch Logs."
+  type        = bool
+  default     = false
+}
+
+variable "grafana_promtail_lambda_arn" {
+  description = "Optional destination Lambda ARN for CloudWatch Logs subscription filter."
+  type        = string
+  default     = null
+}
